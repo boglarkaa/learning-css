@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca", sans-serif;
+}
+
+.component {
+	width: 65%;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.column {
+	height: 350px;
+	width: 33.33%;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.icon {
+	width: 50px;
+}
+
+/* Text */
+.content {
+	color: hsl(0, 0%, 95%);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.description {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.8;
+	font-size: 12px;
+}
+
+.title {
+	font-family: "Big Shoulders";
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+/* Buttons */
+.btn {
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	padding: 10px 24px;
+	border-radius: 20px;
+	font-size: 12px;
+	width: fit-content;
+}
+
+.btn.sedans {
+	color: hsl(31, 77%, 52%);
+}
+
+.btn.suvs {
+	color: hsl(184, 100%, 22%);
+}
+.btn.luxury {
+	color: hsl(179, 100%, 13%);
+}
