@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: hsl(185, 75%, 39%);
+	font-family: "Kumbh Sans", sans-serif;
+	color: hsl(229, 23%, 23%);
+}
+
+.component {
+	width: 280px;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 70px;
+	border: 3px solid white;
+	position: relative;
+	top: -35px;
+	margin-bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.name-age {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.name {
+	font-size: 14px;
+}
+
+.age {
+	font-size: 14px;
+	color: hsl(227, 10%, 46%);
+}
+
+.city {
+	font-size: 12px;
+	color: hsl(227, 10%, 46%);
+	text-align: center;
+	margin-top: 8px;
+}
+
+hr {
+	border: 0.1px solid hsl(0, 0%, 59%);
+	opacity: 0.2;
+	margin: 24px 0;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 24px;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	text-align: center;
+}
+
+.stat-num {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.stat-type {
+	font-size: 9px;
+	color: hsl(0, 0%, 59%);
+	letter-spacing: 1.2px;
+}
+
+.top {
+	width: 70%;
+	position: fixed;
+	top: -50%;
+	right: 50%;
+}
+
+.bottom {
+	width: 75%;
+	position: fixed;
+	bottom: -75%;
+	left: 45%;
+}
