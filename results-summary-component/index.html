@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="component">
+			<div class="result">
+				<h1 class="result-title">Your Result</h1>
+				<div class="circle">
+					<h2 class="score">76</h2>
+					<p class="max-result">of 100</p>
+				</div>
+				<h3 class="">Great</h3>
+				<p class="description">
+					You scored higher than 65% of the people who have taken these tests.
+				</p>
+			</div>
+			<div class="summary">
+				<h1 class="summary-title">Summary</h1>
+				<div class="summary-items">
+					<div class="summary-item reaction">
+						<div>
+							<img
+								src="images/icon-reaction.svg"
+								alt="reaction icon"
+								class="icon"
+							/>
+							<span class="summary-text reaction">Reaction</span>
+						</div>
+						<span class="summary-score"><strong>80</strong> / 100</span>
+					</div>
+					<div class="summary-item memory">
+						<div>
+							<img
+								src="images/icon-memory.svg"
+								alt="memory icon"
+								class="icon"
+							/>
+							<span class="summary-text memory">Memory</span>
+						</div>
+						<span class="summary-score"> <strong>91</strong> / 100</span>
+					</div>
+					<div class="summary-item verbal">
+						<div>
+							<img
+								src="images/icon-verbal.svg"
+								alt="verbal icon"
+								class="icon"
+							/>
+							<span class="summary-text verbal">Verbal</span>
+						</div>
+						<span class="summary-score"> <strong>61</strong> / 100</span>
+					</div>
+					<div class="summary-item visual">
+						<div>
+							<img
+								src="images/icon-visual.svg"
+								alt="visual icon"
+								class="icon"
+							/>
+
+							<span class="summary-text visual">Visual</span>
+						</div>
+						<span class="summary-score"> <strong>73</strong> / 100</span>
+					</div>
+				</div>
+				<button class="button">Continue</button>
+			</div>
+		</div>
+	</body>
+</html>
