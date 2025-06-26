@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: hsl(225, 100%, 94%);
+	font-family: "Red Hat Display", "sans-serif";
+}
+
+.component {
+	background-color: white;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.container {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: hsl(225, 100%, 98%);
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.icon-plan{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Text */
+
+.title {
+	font-size: 20px;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.price,
+.plan {
+	text-align: left;
+}
+
+.plan {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	font-size: 12px;
+}
+
+.description,
+.price {
+	font-size: 12px;
+	color: hsl(224, 23%, 55%);
+}
+
+/* Buttons */
+
+.cancel-btn {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.change-btn {
+	font-size: 10px;
+	color: hsl(245, 75%, 52%);
+	font-weight: 700;
+}
+
+.proceed-btn {
+	color: white;
+	background-color: hsl(245, 75%, 52%);
+	border: none;
+	padding: 10px;
+	font-size: 12px;
+	font-weight: 550;
+	border-radius: 8px;
+	box-shadow: 0px 10px 20px hsla(245, 75%, 52%, 0.3);
+}
+
+/* Images */
+
+.music-icon {
+	display: inline-flex;
+	width: 35px;
+}
+
+.hero {
+	width: 100%;
+}
