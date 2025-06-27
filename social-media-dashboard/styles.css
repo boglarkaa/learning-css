@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(230, 17%, 14%);
+	color: white;
+	font-family: "Inter", sans-serif;
+}
+
+.background-pattern {
+	background-color: hsl(232, 19%, 15%);
+	width: 100%;
+	height: 30vh;
+	z-index: -1;
+	position: absolute;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.mode-label {
+	font-size: 14px;
+	color: hsl(228, 34%, 66%);
+}
+
+.titles {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.title {
+	font-size: 24px;
+	letter-spacing: 0.5px;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: hsl(228, 34%, 66%);
+}
+
+.main-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	padding-bottom: 50px;
+}
+
+.card {
+	background-color: hsl(228, 28%, 20%);
+	border-top: 4px solid;
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 25%;
+	gap: 20px;
+}
+
+.card.facebook {
+	border-top-color: hsl(208, 92%, 53%);
+}
+.card.twitter {
+	border-top-color: hsl(203, 89%, 53%);
+}
+.card.instagram {
+	border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
+		1;
+}
+.card.youtube {
+	border-top-color: hsl(348, 97%, 39%);
+}
+
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-size: 12px;
+	color: hsl(228, 34%, 66%);
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.followers-number {
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.followers-label {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: hsl(228, 34%, 66%);
+	letter-spacing: 4px;
+	font-weight: 200;
+}
+
+.followers-update {
+	font-size: 12px;
+	color: hsl(163, 72%, 41%);
+}
+
+.secondary-title {
+	font-size: 20px;
+	padding-bottom: 16px;
+}
+
+.overview-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 25px;
+}
+
+.overview-card {
+	background-color: hsl(228, 28%, 20%);
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.overview-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	color: hsl(228, 34%, 66%);
+}
+
+.overview-card-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.number {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.overview-card-body div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2px;
+}
+
+.percentage {
+	font-size: 12px;
+	color: hsl(163, 72%, 41%);
+}
+
+.down {
+	color: hsl(356, 69%, 56%);
+}
