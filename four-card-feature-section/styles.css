@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: hsl(234, 12%, 34%);
+	margin: 0 auto;
+}
+
+.component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	text-align: center;
+}
+
+.subtitle {
+	font-weight: 200;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.description {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.cards {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	align-items: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	gap: 25px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px hsla(210, 6%, 44%, 0.25);
+}
+
+.card.supervisor {
+	border-top: 3px solid hsl(180, 62%, 55%);
+}
+.card.team-builder {
+	border-top: 3px solid hsl(0, 78%, 62%);
+}
+.card.karma {
+	border-top: 3px solid hsl(34, 97%, 64%);
+}
+.card.calculator {
+	border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.card-img {
+	width: 20%;
+	align-self: flex-end;
+	margin-top: 20px;
+}
+
+.card-title {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.card-subtitle {
+	font-weight: 200;
+	font-size: 14px;
+}
+
+@media (max-width: 850px) {
+	.component {
+		width: 90%;
+		margin-top: 50px;
+	}
+
+	.card {
+		padding: 30px;
+	}
+
+	.cards {
+		flex-direction: column;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.column {
+		width: 90%;
+	}
+}
