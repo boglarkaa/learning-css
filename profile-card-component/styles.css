@@ -93,15 +93,13 @@ hr {
 }
 
 .top {
-	width: 70%;
 	position: fixed;
-	top: -50%;
+	top: -80%;
 	right: 50%;
 }
 
 .bottom {
-	width: 75%;
 	position: fixed;
-	bottom: -75%;
+	bottom: -90%;
 	left: 45%;
 }
