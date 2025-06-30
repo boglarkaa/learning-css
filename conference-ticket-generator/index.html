@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Conference ticket generator</title>
+
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<img
+			src="images/pattern-squiggly-line-top.svg"
+			alt="Squiggly line"
+			class="squiggly-line-top"
+		/>
+		<img
+			src="images/pattern-squiggly-line-bottom-desktop.svg"
+			alt="Squiggly line"
+			class="squiggly-line-bottom"
+		/>
+		<img src="images/pattern-circle.svg" alt="Circle" class="top circle" />
+		<img src="images/pattern-circle.svg" alt="Circle" class="middle circle" />
+		<div class="container">
+			<img src="images/logo-full.svg" alt="Coding Conf Logo" class="logo" />
+			<div class="content">
+				<div class="titles">
+					<h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+					<p class="subtitle">
+						Secure your spot at next year's biggest coding conference.
+					</p>
+				</div>
+				<form>
+					<div class="form-group">
+						<p class="label">Upload Avatar</p>
+						<div class="drop-zone">
+							<img
+								src="images/icon-upload.svg"
+								alt="Upload Icon"
+								class="upload-icon"
+							/>
+							<p>Drag and drop or click to upload</p>
+						</div>
+						<div class="info">
+							<img
+								src="images/icon-info.svg"
+								alt="Info Icon"
+								class="info-icon"
+							/>
+							<p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<p class="label">Full Name</p>
+						<input type="text" />
+					</div>
+
+					<div class="form-group">
+						<p class="label">Email Address</p>
+						<input type="text" placeholder="example@email.com" />
+					</div>
+
+					<div class="form-group">
+						<p class="label">GitHub Username</p>
+						<input type="text" placeholder="@yourusername" />
+					</div>
+
+					<button class="btn" type="submit">Generate My Ticket</button>
+				</form>
+			</div>
+			<div class="content hidden">
+				<div class="titles ticket">
+					<h1 class="title ticket">
+						Congrats, <span class="gradient-name">Jonatan Kristof</span>! Your
+						ticket is ready.
+					</h1>
+					<p class="subtitle ticket">
+						We've emailed your ticket to
+						<span class="email">jonatan@email.com</span> and will send updates
+						in the run up to the event.
+					</p>
+				</div>
+
+				<div class="ticket-container">
+					<div class="ticket-image">
+						<img
+							src="images/pattern-ticket.svg"
+							alt="Ticket Pattern"
+							class="ticket-pattern"
+						/>
+					</div>
+
+					<div class="ticket-content">
+						<div class="ticket-header">
+							<img
+								src="images/logo-mark.svg"
+								alt="Coding Conf Logo"
+								class="ticket-logo"
+								width="30px"
+							/>
+							<div class="ticket-date">
+								<span>Coding Conf</span>
+								<p>Jan 31, 2025 / Austin, TX</p>
+							</div>
+						</div>
+						<div class="ticket-footer">
+							<img
+								src="images/image-avatar.jpg"
+								alt="Avatar"
+								class="avatar"
+								width="50px"
+							/>
+							<div class="personal-details">
+								<span>Jonatan Kristof</span>
+								<div class="github">
+									<img
+										src="images/icon-github.svg"
+										alt="Github Icon"
+										width="16px"
+									/>
+									<p>@jonatankristof0101</p>
+								</div>
+							</div>
+							<p class="code">#01609</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const button = document.querySelector(".btn");
+			const contents = document.querySelectorAll(".content");
+
+			button.addEventListener("click", (e) => {
+				e.preventDefault();
+
+				contents.forEach((section) => {
+					section.classList.toggle("hidden");
+				});
+			});
+		</script>
+	</body>
+</html>
