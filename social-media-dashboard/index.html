@@ -20,6 +20,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		
 	</head>
 	<body>
 		<div class="background-pattern"></div>
@@ -29,7 +30,13 @@
 					<h1 class="title">Social Media Dashboard</h1>
 					<p class="subtitle">Total Followers: 23,004</p>
 				</div>
-				<div class="mode-label">Dark Mode</div>
+				<div class="mode-switch">
+					<div class="mode-label">Dark Mode</div>
+					<label class="switch">
+						<input type="checkbox" id="toggle" />
+						<span class="slider round"></span>
+					</label>
+				</div>
 			</div>
 
 			<div class="main-cards">
@@ -256,5 +263,13 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			const toggle = document.getElementById("toggle");
+			const body = document.body;
+
+			toggle.addEventListener("change", () => {
+				body.classList.toggle("light-mode");
+			});
+		</script>
 	</body>
 </html>
