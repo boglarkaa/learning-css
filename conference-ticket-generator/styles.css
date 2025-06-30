@@ -99,7 +99,7 @@ form {
 	width: 50%;
 }
 
-.label {
+label {
 	font-size: 14px;
 }
 
@@ -124,6 +124,10 @@ form {
 	color: hsl(252, 6%, 83%);
 }
 
+.drop-zone.error {
+	color: hsl(7, 88%, 67%);
+}
+
 .upload-icon {
 	width: 36px;
 	height: 36;
@@ -140,7 +144,7 @@ form {
 	color: hsl(252, 6%, 83%);
 }
 
-input {
+input:not([type="file"]) {
 	background-color: rgba(255, 255, 255, 0.08);
 	border: 1px solid hsla(252, 6%, 83%, 0.5);
 	border-radius: 10px;
@@ -148,8 +152,43 @@ input {
 	color: hsl(252, 6%, 83%);
 }
 
+input:focus {
+	border: 3px double hsla(252, 6%, 83%, 0.5);
+	outline: none;
+}
+
+input.error {
+	border: 1px solid hsl(7, 88%, 67%);
+}
+
+.info .error {
+	color: hsl(7, 88%, 67%);
+	border: none;
+}
+
 input::placeholder {
 	color: hsla(252, 6%, 83%, 0.698);
+}
+
+input:hover,
+.drop-zone:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.error-message {
+	font-size: 10px;
+	color: hsl(0, 88%, 67%);
+	margin-top: 4px;
+}
+
+.error {
+	border: 1px solid hsl(0, 88%, 67%);
+}
+
+input:focus {
+	border: 1px solid hsl(7, 88%, 67%);
+	background-color: rgba(255, 255, 255, 0.12);
 }
 
 .btn {
@@ -159,6 +198,11 @@ input::placeholder {
 	border-radius: 8px;
 	background-color: hsl(7, 88%, 67%);
 	color: hsl(248, 70%, 10%);
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: hsl(7, 71%, 60%);
 }
 
 .hidden {

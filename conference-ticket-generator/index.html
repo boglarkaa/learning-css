@@ -46,8 +46,14 @@
 				</div>
 				<form>
 					<div class="form-group">
-						<p class="label">Upload Avatar</p>
-						<div class="drop-zone">
+						<label for="fileInput">Upload Avatar</label>
+						<input
+							type="file"
+							id="fileInput"
+							accept="image/png, image/jpeg"
+							class="hidden"
+						/>
+						<div class="drop-zone" id="dropZone">
 							<img
 								src="images/icon-upload.svg"
 								alt="Upload Icon"
@@ -64,19 +70,28 @@
 							<p>Upload your photo (JPG or PNG, max size: 500KB).</p>
 						</div>
 					</div>
+
 					<div class="form-group">
-						<p class="label">Full Name</p>
-						<input type="text" />
+						<label for="name">Full Name</label>
+						<input type="text" id="name" autocomplete="name" />
+						<span class="error-message"></span>
 					</div>
 
 					<div class="form-group">
-						<p class="label">Email Address</p>
-						<input type="text" placeholder="example@email.com" />
+						<label for="email">Email Address</label>
+						<input
+							type="text"
+							placeholder="example@email.com"
+							id="email"
+							autocomplete="email"
+						/>
+						<span class="error-message"></span>
 					</div>
 
 					<div class="form-group">
-						<p class="label">GitHub Username</p>
-						<input type="text" placeholder="@yourusername" />
+						<label for="github-user">GitHub Username</label>
+						<input type="text" placeholder="@yourusername" id="github-user" />
+						<span class="error-message"></span>
 					</div>
 
 					<button class="btn" type="submit">Generate My Ticket</button>
@@ -141,18 +156,6 @@
 				</div>
 			</div>
 		</div>
-
-		<script>
-			const button = document.querySelector(".btn");
-			const contents = document.querySelectorAll(".content");
-
-			button.addEventListener("click", (e) => {
-				e.preventDefault();
-
-				contents.forEach((section) => {
-					section.classList.toggle("hidden");
-				});
-			});
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
