@@ -7,6 +7,12 @@ body {
 	font-family: "Poppins", sans-serif;
 	color: hsl(234, 12%, 34%);
 	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
 }
 
 .component {
@@ -15,16 +21,16 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 80%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	max-width: 1200px;
+
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .header {
 	display: flex;
 	flex-direction: column;
-	width: 35%;
+	width: 40%;
 	text-align: center;
 }
 
@@ -34,20 +40,20 @@ body {
 
 .title {
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 2rem;
 }
 
 .description {
-	margin-top: 10px;
+	margin-top: 0.7rem;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 1rem;
 }
 
 .cards {
-	margin-top: 50px;
+	margin-top: 4rem;
 	display: flex;
 	flex-direction: row;
-	gap: 25px;
+	gap: 2rem;
 	align-items: center;
 }
 
@@ -55,14 +61,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 33%;
-	gap: 25px;
+	gap: 2rem;
 }
 
 .card {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-	padding: 30px;
+	padding: 2rem;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px hsla(210, 6%, 44%, 0.25);
 }
@@ -83,27 +89,22 @@ body {
 .card-img {
 	width: 20%;
 	align-self: flex-end;
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 
 .card-title {
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1rem;
 }
 
 .card-subtitle {
 	font-weight: 200;
-	font-size: 14px;
+	font-size: 0.8rem;
 }
 
 @media (max-width: 850px) {
 	.component {
 		width: 90%;
-		margin-top: 50px;
-	}
-
-	.card {
-		padding: 30px;
 	}
 
 	.cards {
