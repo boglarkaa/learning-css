@@ -1,23 +1,27 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: hsl(221, 100%, 96%);
 	color: white;
 	font-family: "Hanken Grotesk", sans-serif;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
 .component {
 	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	background-color: white;
 	border-radius: 20px;
 	width: 40%;
+
+	max-width: 480px;
 }
 
 .result {
@@ -28,26 +32,26 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 25px;
+	gap: 2rem;
 }
 
 .summary {
-	padding: 20px;
+	padding: 1.5rem;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 2rem;
 }
 
 .summary-items {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 0.5rem;
 }
 
 .summary-title,
 .result-title {
-	font-size: 14px;
+	font-size: 1rem;
 }
 
 .result-title {
@@ -71,7 +75,7 @@ body {
 }
 
 .score {
-	font-size: 36px;
+	font-size: 3rem;
 }
 
 .max-result {
@@ -82,15 +86,15 @@ body {
 .description {
 	color: hsl(241, 100%, 89%);
 	text-align: center;
-	font-size: 10px;
+	font-size: 0.7rem;
 }
 
 .summary-item {
 	background-color: brown;
-	padding: 8px;
+	padding: 0.5rem;
 	display: flex;
 	justify-content: space-between;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	align-items: center;
 }
 
@@ -113,7 +117,7 @@ body {
 
 .summary-text,
 .summary-score {
-	font-size: 10px;
+	font-size: 0.7rem;
 }
 
 .summary-score {
@@ -124,8 +128,8 @@ button {
 	background-color: hsl(224, 30%, 27%);
 	border: none;
 	color: white;
-	padding: 10px;
-	font-size: 10px;
+	padding: 0.7rem;
+	font-size: 0.7rem;
 	border-radius: 20px;
 }
 
@@ -136,20 +140,18 @@ button {
 .summary-item div {
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 0.2rem;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 820px) {
 	.component {
 		flex-direction: column;
-		width: 50%;
-		
-		/* padding: 20px; */
+		width: 80%;
+		max-width: 320px;
 	}
 
 	.result {
 		width: 100%;
-		
 	}
 
 	.summary {
