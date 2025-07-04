@@ -74,6 +74,24 @@ button.addEventListener("click", (e) => {
 	}
 	// If all valid, show ticket
 	if (isValid) {
+		document.getElementById("titleName").textContent = nameInput.value.trim();
+		document.getElementById("ticketName").textContent = nameInput.value.trim();
+		document.getElementById("ticketEmail").textContent =
+			emailInput.value.trim();
+		document.getElementById("ticketGithub").textContent =
+			githubInput.value.trim();
+
+		const avatarImg = document.getElementById("ticketAvatar");
+		const file = fileInput.files[0];
+
+		if (file && file.type.startsWith("image/")) {
+			const reader = new FileReader();
+			reader.onload = function (e) {
+				avatarImg.src = e.target.result;
+			};
+			reader.readAsDataURL(file);
+		}
+
 		contents.forEach((section) => {
 			section.classList.toggle("hidden");
 		});

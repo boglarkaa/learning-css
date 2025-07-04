@@ -9,11 +9,19 @@
 body {
 	background: url("images/background-desktop.png");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
 }
 
 body::before {
 	content: "";
-	position: absolute;
+	position: fixed;
 	background: url("images/pattern-lines.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -25,14 +33,14 @@ body::before {
 }
 
 .squiggly-line-top {
-	position: absolute;
+	position: fixed;
 	top: 40px;
 	right: 0px;
 	width: 30%;
 }
 
 .squiggly-line-bottom {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	width: 65%;
@@ -40,7 +48,7 @@ body::before {
 }
 
 .circle {
-	position: absolute;
+	position: fixed;
 	width: 15%;
 	z-index: -1;
 }
@@ -60,7 +68,7 @@ body::before {
 	justify-content: center;
 	align-items: center;
 	width: 70%;
-	margin: 0 auto;
+	margin: 2rem auto;
 }
 
 .content {
@@ -73,24 +81,24 @@ body::before {
 }
 
 .logo {
-	margin-top: 20px;
+	margin-top: 2rem;
 	width: 120px;
-	margin-bottom: 40px;
+	margin-bottom: 3rem;
 }
 
 .titles {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	gap: 14px;
-	margin-bottom: 28px;
+	gap: 1rem;
+	margin-bottom: 2rem;
 }
 
 .title {
-	font-size: 42px;
+	font-size: 2.5rem;
 }
 .subtitle {
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 300;
 	color: hsl(252, 6%, 83%);
 }
@@ -106,21 +114,21 @@ label {
 .form-group {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
-	margin-bottom: 16px;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .drop-zone {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 0.5rem;
 	justify-content: center;
 	align-items: center;
-	padding: 12px;
+	padding: 0.8rem;
 	border: 1px dashed hsla(252, 6%, 83%, 0.5);
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.08);
-	font-size: 12px;
+	font-size: 0.8rem;
 	color: hsl(252, 6%, 83%);
 }
 
@@ -129,18 +137,18 @@ label {
 }
 
 .upload-icon {
-	width: 36px;
-	height: 36;
-	padding: 8px;
+	width: 2rem;
+	height: 2rem;
+	padding: 0.5rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
 }
 
 .info {
 	display: flex;
-	gap: 4px;
+	gap: 0.25rem;
 	align-items: center;
-	font-size: 10px;
+	font-size: 0.7rem;
 	color: hsl(252, 6%, 83%);
 }
 
@@ -148,7 +156,7 @@ input:not([type="file"]) {
 	background-color: rgba(255, 255, 255, 0.08);
 	border: 1px solid hsla(252, 6%, 83%, 0.5);
 	border-radius: 10px;
-	padding: 10px;
+	padding: 0.7rem;
 	color: hsl(252, 6%, 83%);
 }
 
@@ -177,7 +185,7 @@ input:hover,
 }
 
 .error-message {
-	font-size: 10px;
+	font-size: 0.7rem;
 	color: hsl(0, 88%, 67%);
 	margin-top: 4px;
 }
@@ -194,7 +202,7 @@ input:focus {
 .btn {
 	border: none;
 	width: 100%;
-	padding: 10px;
+	padding: 0.7rem;
 	border-radius: 8px;
 	background-color: hsl(7, 88%, 67%);
 	color: hsl(248, 70%, 10%);
@@ -246,7 +254,7 @@ input:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -255,18 +263,18 @@ input:focus {
 .ticket-header {
 	display: flex;
 	align-items: start;
-	gap: 16px;
+	gap: 1rem;
 	width: fit-content;
 }
 
 .ticket-date {
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 0.8rem;
 }
 
 .ticket-header span {
-	font-size: 28px;
+	font-size: 1.8rem;
 }
 .ticket-header p {
 	font-size: 12px;
@@ -276,7 +284,7 @@ input:focus {
 .ticket-footer {
 	display: flex;
 	align-items: end;
-	gap: 16px;
+	gap: 1rem;
 	width: fit-content;
 }
 
@@ -284,29 +292,59 @@ input:focus {
 	display: flex;
 	flex-direction: column;
 
-	gap: 10px;
-	font-size: 18px;
+	gap: 0.7rem;
+	font-size: 1rem;
 }
 
 .github {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font-size: 12px;
+	font-size: 0.9rem;
 	color: hsl(252, 6%, 83%);
-	gap: 4px;
+	gap: 0.25rem;
 }
 
 .avatar {
-	border-radius: 10px;
+	border-radius: 0.7rem;
 }
 
 .code {
 	position: absolute;
 	top: 50%;
 	transform: translateX(-50%);
-	right: 10px;
+	right: 0.7rem;
 	transform: rotate(90deg);
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: hsla(252, 6%, 83%, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background: url("images/background-tablet.png");
+	}
+
+	.container,
+	form {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background: url("images/background-mobile.png");
+	}
+
+	.container,
+	form {
+		width: 95%;
+	}
+
+	.title, .title.ticket{
+		font-size: 1.8rem;
+	}
+
+	.subtitle.ticket{
+		width: 100%;
+	}
 }
