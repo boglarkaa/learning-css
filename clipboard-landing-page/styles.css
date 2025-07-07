@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header-pattern {
+	background-image: url("images/bg-header-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+}
+
+body {
+	font-family: "Bai Jamjuree", sans-serif;
+	background-color: hsl(0, 0%, 98%);
+	color: hsl(210, 10%, 33%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+	width: 60%;
+	margin-top: 120px;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+.hero-title {
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+.hero-description {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	text-align: center;
+	color: hsl(201, 11%, 66%);
+}
+
+.buttons {
+	display: flex;
+	gap: 20px;
+}
+
+button {
+	padding: 15px 30px;
+	border: none;
+	border-radius: 25px;
+	color: white;
+}
+
+button.mac {
+	background-color: hsl(233, 100%, 69%);
+	box-shadow: 0px 2px 8px 0px hsla(233, 100%, 69%, 0.5);
+	border-bottom: 2px solid hsl(233, 53%, 56%);
+}
+
+button.ios {
+	background-color: hsl(171, 66%, 44%);
+	box-shadow: 0px 2px 8px 0px hsla(171, 66%, 44%, 0.5);
+	border-bottom: 2px solid hsl(171, 66%, 34%);
+}
+
+.features-container {
+	width: 100%;
+	max-width: 1200px;
+	margin-top: 80px;
+	padding: 0 20px;
+}
+
+.features {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 40px;
+	width: 100%;
+	max-width: 1200px;
+	margin-top: 80px;
+	position: relative;
+}
+
+.features img {
+	position: absolute;
+	left: -10%;
+}
+
+ul {
+	list-style: none;
+}
+
+.features li {
+	margin-top: 64px;
+}
+
+li h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+li p {
+	margin-top: 12px;
+	font-size: 18px;
+	color: hsl(201, 11%, 66%);
+	line-height: 1.5;
+}
+
+.section-header {
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.section-description {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	text-align: center;
+	color: hsl(201, 11%, 66%);
+	width: 60%;
+	margin-top: 24px;
+	margin-bottom: 80px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 80px;
+}
+
+.tools {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	align-items: start;
+}
+
+.tools img {
+	height: 32px;
+}
+
+.tool {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+
+.tool-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tool-description {
+	font-size: 14px;
+	line-height: 1.5rem;
+	color: hsl(201, 11%, 66%);
+}
+
+.logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 80px 0px;
+}
+
+footer {
+	width: 100%;
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+footer .footer-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+	width: 80%;
+	padding: 48px 0px;
+}
+
+footer .logo {
+	width: 48px;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	gap: 16px;
+}
+.social-icons img {
+	height: 16px;
+}
+
+.footer-links {
+	display: grid;
+
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: hsl(201, 11%, 66%);
+}
