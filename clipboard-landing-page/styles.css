@@ -99,17 +99,16 @@ button.ios {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	gap: 40px;
 	width: 100%;
 	max-width: 1200px;
-	margin-top: 80px;
-	position: relative;
 }
 
 .features img {
-	position: absolute;
-	left: -10%;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	transform: translateX(-30%);
 }
 
 ul {
@@ -189,6 +188,11 @@ li p {
 	text-align: center;
 }
 
+.tool-title {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
 .tool-description {
 	font-size: 14px;
 	line-height: 1.5rem;
@@ -201,6 +205,7 @@ li p {
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 80px 0px;
+	gap: 16px;
 }
 
 footer {
@@ -230,13 +235,13 @@ footer .logo {
 	justify-content: end;
 	gap: 16px;
 }
+
 .social-icons img {
 	height: 16px;
 }
 
 .footer-links {
 	display: grid;
-
 	grid-template-columns: repeat(3, 1fr);
 	gap: 16px;
 }
@@ -244,4 +249,60 @@ footer .logo {
 .footer-links a {
 	text-decoration: none;
 	color: hsl(201, 11%, 66%);
+}
+
+@media screen and (max-width: 970px) {
+	.features {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+    .features img {
+        transform: translateX(0);
+    }
+
+	.footer-links {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	footer .footer-content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 48px;
+	}
+
+	.logos {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 64px;
+	}
+
+	.tools {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 64px;
+	}
+
+	.devices-image {
+		width: 100%;
+	}
+
+	.computer-image {
+		width: 100%;
+		position: static;
+	}
+
+	.buttons {
+		width: 90%;
+	}
 }
