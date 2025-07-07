@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	color: hsl(14, 65%, 9%);
+	font-family: "Red Hat Text", sans-serif;
+	background-color: hsl(20, 50%, 98%);
+}
+
+.content {
+	margin: 80px 0px;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dessert-grid {
+	width: 60%;
+}
+
+h1 {
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+.dessert-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.card-image {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	border-radius: 10px;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.card-category {
+	font-size: 0.7rem;
+	color: hsl(12, 20%, 44%);
+	margin-top: 8px;
+}
+
+.card-title {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.card-price {
+	font-size: 0.8rem;
+	color: hsl(14, 86%, 42%);
+}
+
+.card-button {
+	color: hsl(14, 65%, 9%);
+	border: none;
+	border-radius: 25px;
+	padding: 8px 20px;
+	font-size: 0.7rem;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+
+	background-color: white;
+	border: 0.2px solid hsl(14, 25%, 72%);
+
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	transform: translateX(-50%);
+
+	width: 70%;
+}
+
+.card-button img {
+	width: 15px;
+	height: 15px;
+}
+
+.cart {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	height: fit-content;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.cart-title {
+	color: hsl(14, 86%, 42%);
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.cart-description {
+	font-size: 0.7rem;
+	color: hsl(12, 20%, 44%);
+	margin-top: 10px;
+	text-align: center;
+}
+
+.empty-cart-img {
+	max-width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+
+	.products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+
+	.products {
+		grid-template-columns: 1fr;
+	}
+}
