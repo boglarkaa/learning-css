@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(229, 57%, 11%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	color: white;
+	font-family: "Raleway", sans-serif;
+
+	background-image: url("images/bg-desktop.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	justify-content: center;
+	gap: 2rem;
+	gap: 2rem;
+	width: 70%;
+}
+
+.left-card {
+	background-color: hsl(228, 56%, 26%);
+	padding: 32px;
+	border-radius: 10px 80px 10px 10px;
+	width: 35%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.logo {
+	width: 60%;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	align-items: center;
+}
+
+.icon-container {
+	background-color: hsl(229, 57%, 11%);
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
+}
+
+.icon-container img {
+	width: 18px;
+}
+
+.right-card {
+	background-color: hsl(228, 56%, 26%);
+	padding: 32px;
+	width: 70%;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	font-size: 12px;
+	font-weight: 300;
+
+	position: relative;
+}
+
+.labels {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+span {
+	font-weight: 600;
+}
+
+.progress-bar {
+	width: 100%;
+	background-color: hsl(229, 57%, 11%);
+	height: 18px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding-left: 2px;
+}
+
+.progress {
+	width: 70%;
+	background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+	height: 14px;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.progress::after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+	background-color: white;
+	position: absolute;
+	right: 2px;
+}
+
+.bubble {
+	background-color: white;
+	color: hsl(229, 57%, 11%);
+
+	border-radius: 10px;
+	position: absolute;
+
+	padding: 10px 24px;
+	right: 32px;
+	top: -40px;
+}
+
+.bubble span {
+	font-size: 32px;
+}
+
+.bubble::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 0 0 30px;
+	border-color: white transparent transparent transparent;
+	bottom: -10px;
+	right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background-image: url("images/bg-mobile.png");
+		background-size: cover;
+	}
+
+	.content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.left-card {
+		width: 100%;
+	}
+
+	.right-card {
+		width: 100%;
+	}
+
+	.bubble::before {
+		content: "";
+		border: none;
+	}
+
+	.bubble {
+		top: unset;
+		right: 50%;
+		transform: translateX(50%);
+		bottom: -40px;
+	}
+}
