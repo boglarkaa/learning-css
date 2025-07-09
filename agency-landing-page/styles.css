@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: "Barlow", sans-serif;
+}
+
+header {
+	color: white;
+	padding: 32px;
+	position: relative;
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+li {
+	display: inline-block;
+}
+
+.contact {
+	background-color: white;
+	color: hsl(212, 27%, 19%);
+	font-family: "Fraunces", serif;
+	padding: 10px 20px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.logo {
+	width: auto;
+	height: 32px;
+}
+
+.hero-img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+h1 {
+	font-size: 48px;
+	letter-spacing: 4px;
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.arrow-down {
+	display: block;
+	margin: 0 auto;
+
+	margin-top: 100px;
+}
+
+.transform,
+.stand-out {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.stand-out div {
+	width: 50%;
+}
+
+.stand-out img {
+	width: 50%;
+	height: auto;
+}
+
+.section-text {
+	width: 57%;
+	justify-self: center;
+	color: hsl(213, 9%, 39%);
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 24px;
+}
+
+.section-text h2 {
+	font-family: "Fraunces", serif;
+	font-size: 32px;
+	color: hsl(212, 27%, 19%);
+	margin-bottom: 20px;
+	font-weight: 800;
+}
+
+.section-text a {
+	text-decoration: none;
+	color: hsl(212, 27%, 19%);
+	font-weight: 800;
+	font-size: 14px;
+	width: 70%;
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+}
+
+.section-img {
+	width: 50%;
+}
+
+section {
+	background-color: hsl(48, 21%, 91%);
+}
+
+p {
+	font-size: 15px;
+	color: hsl(212, 27%, 19%);
+	line-height: 1.5;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+	width: 100%;
+}
+
+.container-content {
+	position: relative;
+}
+
+.container-content img {
+	width: 100%;
+	height: auto;
+}
+
+.container-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: 0 20px;
+	position: absolute;
+	top: 70%;
+	align-self: center;
+	gap: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.container-text h3 {
+	font-size: 24px;
+	font-family: "Fraunces", serif;
+	color: hsl(167, 40%, 24%);
+	font-weight: 800;
+	text-align: center;
+}
+
+.container-text p {
+	font-size: 14px;
+	color: hsl(167, 40%, 24%);
+	line-height: 1.5;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.testimonials-title {
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "Fraunces", serif;
+	color: hsl(232, 10%, 55%);
+	letter-spacing: 4px;
+}
+
+.pic {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	gap: 32px;
+}
+
+.testimonials {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.testimonial p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.testimonial h3 {
+	font-size: 14px;
+	color: hsl(212, 27%, 19%);
+	font-weight: 800;
+	font-family: "Fraunces", serif;
+	text-align: center;
+}
+
+.testimonials-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 64px;
+	margin-top: 64px;
+}
+
+.testimonial .role {
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 64px;
+}
+
+.gallery img {
+	width: 25%;
+	height: auto;
+}
+
+footer {
+	background-color: hsl(168, 34%, 41%, 0.7);
+	color: hsl(167, 34%, 41%);
+	padding: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	margin-top: 32px;
+}
