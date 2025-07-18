@@ -98,6 +98,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: 24px;
+	text-align: center;
 }
 
 .feature p {
@@ -131,7 +132,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 35%;
 }
 
 .stay-productive-link-text {
@@ -139,11 +139,7 @@ header {
 	align-items: center;
 	flex-direction: row;
 	gap: 20px;
-}
-
-hr {
-	width: 100%;
-	border: 0.5px solid hsl(176, 68%, 64%);
+	border-bottom: 1px solid hsl(176, 68%, 64%);
 }
 
 .stay-productive h2 {
@@ -239,12 +235,11 @@ blockquote {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-    gap: 24px;
+	gap: 24px;
 }
 
 .sign-up {
 	background-color: hsl(217, 28%, 15%);
-
 	padding: 64px;
 	display: flex;
 	flex-direction: column;
@@ -255,11 +250,11 @@ blockquote {
 	width: 60%;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
+	text-align: center;
 }
 
 .sign-up p {
 	color: rgba(255, 255, 255, 0.7);
-	text-align: center;
 }
 
 input {
@@ -340,10 +335,6 @@ footer {
 
 	.stay-productive-text {
 		width: 100%;
-	}
-
-	.stay-productive-link {
-		width: 50%;
 	}
 
 	.stay-productive-link-text img {
